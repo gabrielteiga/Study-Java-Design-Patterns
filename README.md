@@ -1,6 +1,6 @@
-# Importancia dos Design Patterns
+# Projeto de estudos sobre Design Patterns
 
-5 vantagens de aprender Design Patterns
+5 vantagens de aprender Design Patterns:
 
 - 1 - Reutilização de código: Design Patterns fornecem soluções testadas e comprovadas para problemas recorrentes no desenvolvimento de software. Ao aplicar esses padrões, você pode reutilizar o código existente e evitar a reinvenção da roda. Isso resulta em economia de tempo e esforço, além de melhorar a qualidade e a manutenibilidade do código.
 
