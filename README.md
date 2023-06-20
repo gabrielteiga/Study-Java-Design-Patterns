@@ -41,3 +41,8 @@ O Design Pattern Strategy é um padrão comportamental que permite definir uma f
 O Design Pattern Strategy é valioso quando há algoritmos que podem variar e precisam ser selecionados dinamicamente. Ele promove a modularidade, a flexibilidade e o reuso de código, contribuindo para a construção de sistemas mais flexíveis e de fácil manutenção.
 
 Saiba mais: https://refactoring.guru/design-patterns/strategy
+
+## Design Pattern Chain of Responsibility
+
+
+Saiba mais: https://refactoring.guru/design-patterns/chain-of-responsibility
