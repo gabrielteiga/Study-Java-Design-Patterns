@@ -1,5 +1,7 @@
 # Projeto de estudos sobre Design Patterns
 
+O projeto se baseia na criação de uma loja fictícia no qual são elaborados calculadoras de impostos e de descontos, utilizando Design Patterns. *O projeto é voltado exclusivamente de cunho educativo dentro de um cenário fictício.* 
+
 ## 5 vantagens de aprender Design Patterns:
 
 - 1 - Reutilização de código: Design Patterns fornecem soluções testadas e comprovadas para problemas recorrentes no desenvolvimento de software. Ao aplicar esses padrões, você pode reutilizar o código existente e evitar a reinvenção da roda. Isso resulta em economia de tempo e esforço, além de melhorar a qualidade e a manutenibilidade do código.
@@ -42,11 +44,40 @@ O Design Pattern Strategy é um padrão comportamental que permite definir uma f
 
 O Design Pattern Strategy é valioso quando há algoritmos que podem variar e precisam ser selecionados dinamicamente. Ele promove a modularidade, a flexibilidade e o reuso de código, contribuindo para a construção de sistemas mais flexíveis e de fácil manutenção.
 
-Saiba mais: https://refactoring.guru/design-patterns/strategy
+[Saiba mais](https://refactoring.guru/design-patterns/strategy)
 
 ---
 
 ## Design Pattern Chain of Responsibility
 
 
-Saiba mais: https://refactoring.guru/design-patterns/chain-of-responsibility
+[Saiba mais](https://refactoring.guru/design-patterns/chain-of-responsibility)
+
+---
+
+## Design Pattern Template Method
+
+O Template Method é um padrão comportamental que permite definir o esqueleto de um algoritmo em uma classe base, enquanto permite que subclasses especializadas substituam etapas específicas desse algoritmo sem alterar sua estrutura geral. 
+
+### Benefícios
+
+- **Reutilização de código**: O Template Method promove a reutilização de código ao definir um algoritmo comum em uma classe base, permitindo que várias subclasses compartilhem essa implementação básica, evitando a duplicação de código.
+
+- **Flexibilidade**: O padrão oferece flexibilidade ao permitir que as subclasses substituam ou estendam partes específicas do algoritmo base, sem modificar sua estrutura geral. Isso permite adaptar o comportamento do algoritmo para diferentes situações.
+
+- **Padronização**: O Template Method ajuda a estabelecer um padrão consistente para a estrutura de algoritmos em um sistema. Ao fornecer uma estrutura comum, facilita a compreensão e manutenção do código por parte dos desenvolvedores.
+
+- **Inversão de controle**: O padrão inverte o controle do fluxo de execução, permitindo que as subclasses forneçam implementações específicas em pontos-chave do algoritmo. Dessa forma, a classe base pode chamar os métodos fornecidos pelas subclasses, adaptando-se às suas necessidades.
+
+- **Separation of concerns**: O Template Method ajuda a separar as preocupações relacionadas ao algoritmo base das implementações específicas das subclasses. Isso permite que as classes se concentrem em suas tarefas específicas, tornando o código mais modular e de fácil manutenção.
+
+- **Extensibilidade**: O padrão facilita a extensão do comportamento do algoritmo ao adicionar novas subclasses que implementam etapas específicas. Isso permite que o algoritmo base seja estendido sem a necessidade de modificar seu código existente.
+
+### Conclusão
+
+O Template Method é uma ferramenta poderosa para projetar algoritmos flexíveis e reutilizáveis, permitindo a definição de um esqueleto comum e a especialização de partes específicas do algoritmo. Ele promove a modularidade, a reutilização de código e a padronização, tornando o código mais fácil de entender, manter e estender. Ao utilizar o Template Method, os desenvolvedores podem criar sistemas mais flexíveis e adaptáveis, que possam lidar com diferentes variações do mesmo algoritmo de forma eficiente.
+
+
+[Saiba mais](https://refactoring.guru/design-patterns/template-method)
+
+---
