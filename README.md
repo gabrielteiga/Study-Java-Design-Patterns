@@ -1,6 +1,6 @@
 # Projeto de estudos sobre Design Patterns
 
-5 vantagens de aprender Design Patterns:
+## 5 vantagens de aprender Design Patterns:
 
 - 1 - Reutilização de código: Design Patterns fornecem soluções testadas e comprovadas para problemas recorrentes no desenvolvimento de software. Ao aplicar esses padrões, você pode reutilizar o código existente e evitar a reinvenção da roda. Isso resulta em economia de tempo e esforço, além de melhorar a qualidade e a manutenibilidade do código.
 
@@ -11,6 +11,8 @@
 - 4 - Flexibilidade e extensibilidade: Design Patterns promovem o design flexível e extensível de sistemas. Eles ajudam a separar componentes e responsabilidades, permitindo que você faça alterações em partes específicas do código sem afetar o restante do sistema. Isso torna o código mais adaptável a mudanças futuras, seja para adicionar novos recursos, modificar comportamentos ou corrigir problemas.
 
 - 5 - Desenvolvimento de habilidades de resolução de problemas: Ao estudar Design Patterns, você aprende a identificar problemas comuns no desenvolvimento de software e a aplicar soluções adequadas. Isso desenvolve suas habilidades de resolução de problemas e amplia sua capacidade de projetar soluções robustas e eficientes. A capacidade de reconhecer padrões e aplicar soluções existentes a novos problemas é uma habilidade valiosa em qualquer área do desenvolvimento de software.
+
+---
 
 # Design Patterns utilizados no projeto
 
@@ -41,6 +43,8 @@ O Design Pattern Strategy é um padrão comportamental que permite definir uma f
 O Design Pattern Strategy é valioso quando há algoritmos que podem variar e precisam ser selecionados dinamicamente. Ele promove a modularidade, a flexibilidade e o reuso de código, contribuindo para a construção de sistemas mais flexíveis e de fácil manutenção.
 
 Saiba mais: https://refactoring.guru/design-patterns/strategy
+
+---
 
 ## Design Pattern Chain of Responsibility
 
