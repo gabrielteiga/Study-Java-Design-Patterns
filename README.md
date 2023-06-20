@@ -59,7 +59,7 @@ O Design Pattern Strategy é valioso quando há algoritmos que podem variar e pr
 
 O Template Method é um padrão comportamental que permite definir o esqueleto de um algoritmo em uma classe base, enquanto permite que subclasses especializadas substituam etapas específicas desse algoritmo sem alterar sua estrutura geral. 
 
-### Benefícios
+### Beneficios
 
 - **Reutilização de código**: O Template Method promove a reutilização de código ao definir um algoritmo comum em uma classe base, permitindo que várias subclasses compartilhem essa implementação básica, evitando a duplicação de código.
 
@@ -72,11 +72,6 @@ O Template Method é um padrão comportamental que permite definir o esqueleto d
 - **Separation of concerns**: O Template Method ajuda a separar as preocupações relacionadas ao algoritmo base das implementações específicas das subclasses. Isso permite que as classes se concentrem em suas tarefas específicas, tornando o código mais modular e de fácil manutenção.
 
 - **Extensibilidade**: O padrão facilita a extensão do comportamento do algoritmo ao adicionar novas subclasses que implementam etapas específicas. Isso permite que o algoritmo base seja estendido sem a necessidade de modificar seu código existente.
-
-### Conclusão
-
-O Template Method é uma ferramenta poderosa para projetar algoritmos flexíveis e reutilizáveis, permitindo a definição de um esqueleto comum e a especialização de partes específicas do algoritmo. Ele promove a modularidade, a reutilização de código e a padronização, tornando o código mais fácil de entender, manter e estender. Ao utilizar o Template Method, os desenvolvedores podem criar sistemas mais flexíveis e adaptáveis, que possam lidar com diferentes variações do mesmo algoritmo de forma eficiente.
-
 
 [Saiba mais](https://refactoring.guru/design-patterns/template-method)
 
