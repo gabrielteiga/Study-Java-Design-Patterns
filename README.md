@@ -76,3 +76,25 @@ O Template Method é um padrão comportamental que permite definir o esqueleto d
 [Saiba mais](https://refactoring.guru/design-patterns/template-method)
 
 ---
+
+## Design Pattern State
+
+Parecido com o Design Pattern Strategy, quase irmaos gemeos. Esse pattern realmente representa o significado de status, utilizamos quando ha essa troca de estados ou precisamos aplicar alguma regra ou algoritmo baseado em um estado de um objeto/classe, diferente do strategy. Dado um estado, transite para outro estado, utilizando regras de transições de estados, hora de usar o *Design Pattern State*.
+
+### Beneficios
+
+- **Separação de responsabilidades**: Cada estado encapsula seu próprio comportamento, promovendo uma estrutura de código modular e fácil de entender.
+
+- **Adição de novos estados**: A adição de novos estados é simples e não requer modificações no código existente, tornando-o mais flexível e extensível.
+
+- **Eliminação de condicionais complexos**: Evita a necessidade de condicionais complexos para controlar o comportamento do objeto com base no estado, tornando o código mais legível e fácil de manter.
+
+- **Princípio Open/Closed**: O padrão State adere ao princípio Open/Closed, permitindo a adição de novos comportamentos sem modificar o código existente.
+
+- **Simplificação da lógica de contexto**: Reduz a quantidade de lógica relacionada ao estado no objeto principal, simplificando sua implementação e focando em seu propósito principal.
+
+[Saiba mais](https://refactoring.guru/design-patterns/state)
+
+---
+
+
