@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 
 public class GeraPedidoHandler {
-    
+
     // construtor com injecao de dependencias: repository, service, etc.
 
     public void execute(GeraPedido dados){
@@ -9,7 +9,10 @@ public class GeraPedidoHandler {
 
         Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
         
-        System.out.println("Salvar pedido no Banco de Dados");
-        System.out.println("Enviar email com os dados do novo pedido");
+        EnviarEmailPedido email = new EnviarEmailPedido();
+        SalvarPedidoNoBancoDeDados salvar = new SalvarPedidoNoBancoDeDados();
+
+        email.executar(pedido);
+        salvar.executar(pedido);
     }
 }
