@@ -44,6 +44,7 @@ O Design Pattern Strategy é um padrão comportamental que permite definir uma f
 
 O Design Pattern Strategy é valioso quando há algoritmos que podem variar e precisam ser selecionados dinamicamente. Ele promove a modularidade, a flexibilidade e o reuso de código, contribuindo para a construção de sistemas mais flexíveis e de fácil manutenção.
 
+<a href="https://www.refactoring.guru/design-patterns/strategy" target="_blank">Saiba Mais com target</a>
 [Saiba mais](https://refactoring.guru/design-patterns/strategy)
 
 ---
@@ -76,6 +77,7 @@ O padrão Chain of Responsibility oferece os seguintes benefícios:
 
 4. Suporte a lógica condicional: O padrão permite a implementação de lógica condicional flexível e dinâmica para determinar qual objeto deve processar uma solicitação.
 
+<a href="https://www.refactoring.guru/design-patterns/chain-of-responsibility" target="_blank">Saiba Mais com target</a>
 [Saiba mais](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
 ---
@@ -98,6 +100,7 @@ O Template Method é um padrão comportamental que permite definir o esqueleto d
 
 - **Extensibilidade**: O padrão facilita a extensão do comportamento do algoritmo ao adicionar novas subclasses que implementam etapas específicas. Isso permite que o algoritmo base seja estendido sem a necessidade de modificar seu código existente.
 
+<a href="https://www.refactoring.guru/design-patterns/template-method" target="_blank">Saiba Mais com target</a>
 [Saiba mais](https://refactoring.guru/design-patterns/template-method)
 
 ---
@@ -118,6 +121,7 @@ Parecido com o Design Pattern Strategy, quase irmaos gemeos. Esse pattern realme
 
 - **Simplificação da lógica de contexto**: Reduz a quantidade de lógica relacionada ao estado no objeto principal, simplificando sua implementação e focando em seu propósito principal.
 
+<a href="https://www.refactoring.guru/design-patterns/state" target="_blank">Saiba Mais com target</a>
 [Saiba mais](https://refactoring.guru/design-patterns/state)
 
 ---
@@ -150,6 +154,7 @@ A separação entre o Command e o Command Handler traz benefícios, como:
 
 - Manutenibilidade: A divisão entre Command e Command Handler facilita a manutenção do código, pois as alterações relacionadas à lógica de execução do comando são isoladas no Command Handler, reduzindo o impacto em outros componentes.
 
+<a href="https://www.refactoring.guru/design-patterns/command" target="_blank">Saiba Mais com target</a>
 [Saiba Mais](https://refactoring.guru/design-patterns/command)
 
 ---
@@ -178,6 +183,7 @@ O padrão Observer traz os seguintes benefícios:
 3. Reutilização: Observadores podem ser reutilizados em diferentes contextos, facilitando a modularidade do código.
 4. Comunicação assíncrona: Observadores são notificados de forma assíncrona, permitindo que continuem suas operações sem bloquear o objeto observado.
 
+<a href="https://www.refactoring.guru/design-patterns/observer" target="_blank">Saiba Mais com target</a>
 [Saiba mais](https://refactoring.guru/design-patterns/observer)
 
 ---
