@@ -18,7 +18,7 @@ O projeto se baseia na criação de uma loja fictícia no qual são elaborados c
 
 # Design Patterns utilizados no projeto
 
-## Design Pattern Strategy
+## Strategy
 
 O Design Pattern Strategy é um padrão comportamental que permite definir uma família de algoritmos, encapsulá-los individualmente e torná-los intercambiáveis. Isso permite que o algoritmo varie independentemente dos clientes que o utilizam.
 
@@ -48,14 +48,14 @@ O Design Pattern Strategy é valioso quando há algoritmos que podem variar e pr
 
 ---
 
-## Design Pattern Chain of Responsibility
+## Chain of Responsibility
 
 
 [Saiba mais](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
 ---
 
-## Design Pattern Template Method
+## Template Method
 
 O Template Method é um padrão comportamental que permite definir o esqueleto de um algoritmo em uma classe base, enquanto permite que subclasses especializadas substituam etapas específicas desse algoritmo sem alterar sua estrutura geral. 
 
@@ -77,7 +77,7 @@ O Template Method é um padrão comportamental que permite definir o esqueleto d
 
 ---
 
-## Design Pattern State
+## State
 
 Parecido com o Design Pattern Strategy, quase irmaos gemeos. Esse pattern realmente representa o significado de status, utilizamos quando ha essa troca de estados ou precisamos aplicar alguma regra ou algoritmo baseado em um estado de um objeto/classe, diferente do strategy. Dado um estado, transite para outro estado, utilizando regras de transições de estados, hora de usar o *Design Pattern State*.
 
@@ -97,4 +97,37 @@ Parecido com o Design Pattern Strategy, quase irmaos gemeos. Esse pattern realme
 
 ---
 
+## Command
+
+Um padrão que representa um comando que precisa ser executado. O padrão de design Command é um padrão comportamental que encapsula uma solicitação como um objeto, permitindo que você parametrize clientes com diferentes solicitações, faça fila ou registre solicitações e ofereça suporte a operações desfazer.
+
+### Benefícios
+
+- **Desacopla remetentes e destinatários**: O padrão Command desacopla o objeto invocador do objeto receptor, permitindo que eles evoluam independentemente um do outro.
+- **Flexibilidade e extensibilidade**: Adicionar novos comandos é fácil e não requer modificações no código existente.
+- **Suporte a operações desfazer**: O padrão Command suporta operações desfazer, permitindo reverter ações sequencialmente.
+- **Registra e filas de solicitações**: As solicitações podem ser registradas ou colocadas em uma fila para implementar recursos como repetição de comandos ou refazer.
+- **Suporte a transações**: O padrão Command pode ser usado para implementar transações, agrupando comandos em uma única transação.
+
+### Command Handler
+
+O Command representa uma única ação ou solicitação específica que deve ser executada. Ele encapsula os parâmetros e o contexto necessários para realizar essa ação. Em outras palavras, o Command define a intenção do que precisa ser feito, mas não sabe como executá-lo.
+
+O Command Handler, por sua vez, é responsável por receber o Command e executar a ação correspondente. Ele conhece a lógica de negócio e implementa os detalhes da execução do comando. O Command Handler é responsável por realizar as operações específicas relacionadas àquele tipo de comando.
+
+A separação entre o Command e o Command Handler traz benefícios, como:
+
+- Separação de responsabilidades: O Command se concentra na representação da solicitação, enquanto o Command Handler se concentra na lógica de execução da ação. Isso permite que cada componente tenha uma única responsabilidade bem definida.
+
+- Reutilização de comandos: Ao separar o Command e o Command Handler, você pode reutilizar o mesmo Command com diferentes implementações de Command Handler. Isso proporciona flexibilidade e extensibilidade, permitindo que você adicione ou modifique o comportamento do Command sem afetar outros componentes.
+
+- Testabilidade: A separação facilita a criação de testes unitários para o Command Handler, pois você pode testar isoladamente a lógica de execução sem a necessidade de criar instâncias completas do Command.
+
+- Manutenibilidade: A divisão entre Command e Command Handler facilita a manutenção do código, pois as alterações relacionadas à lógica de execução do comando são isoladas no Command Handler, reduzindo o impacto em outros componentes.
+
+[Saiba Mais](https://refactoring.guru/design-patterns/command)
+
+---
+
+## 
 

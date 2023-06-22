@@ -3,13 +3,12 @@ import java.time.LocalDateTime;
 
 public class TestePedido {
     public static void main(String[] args) {
-        Orcamento orcamento = new Orcamento(new BigDecimal("600"), 4);
-        String cliente = "Gabriel Teste";
-        LocalDateTime data = LocalDateTime.now();
+        String cliente = args[0];
+        BigDecimal valorOrcamento = new BigDecimal(args[1]);
+        int quantidadeItens = Integer.parseInt(args[2]);
 
-        Pedido pedido = new Pedido(cliente, data, orcamento);
-        
-        System.out.println("Salvar pedido no Banco de Dados");
-        System.out.println("Enviar email com os dados do novo pedido");
+        GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
+        GeraPedidoHandler handler = new GeraPedidoHandler(/*dependencias */);
+        handler.execute(gerador);
     }
 }
