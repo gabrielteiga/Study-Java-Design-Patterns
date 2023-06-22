@@ -1,6 +1,6 @@
-public class SalvarPedidoNoBancoDeDados {
+public class SalvarPedidoNoBancoDeDados implements AcaoAposGerarPedido{
     
-    public void executar(Pedido pedido){
+    public void executarAcao(Pedido pedido){
         System.out.println("Salvando o pedido no Banco de Dados!");
     }
 }

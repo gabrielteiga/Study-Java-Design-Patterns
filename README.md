@@ -4,15 +4,15 @@ O projeto se baseia na criação de uma loja fictícia no qual são elaborados c
 
 ## 5 vantagens de aprender Design Patterns:
 
-- 1 - Reutilização de código: Design Patterns fornecem soluções testadas e comprovadas para problemas recorrentes no desenvolvimento de software. Ao aplicar esses padrões, você pode reutilizar o código existente e evitar a reinvenção da roda. Isso resulta em economia de tempo e esforço, além de melhorar a qualidade e a manutenibilidade do código.
+1. Reutilização de código: Design Patterns fornecem soluções testadas e comprovadas para problemas recorrentes no desenvolvimento de software. Ao aplicar esses padrões, você pode reutilizar o código existente e evitar a reinvenção da roda. Isso resulta em economia de tempo e esforço, além de melhorar a qualidade e a manutenibilidade do código.
 
-- 2 - Boas práticas de programação: Design Patterns encapsulam práticas recomendadas e princípios de design de software. Ao aprender e aplicar esses padrões, você adquire uma compreensão mais profunda de conceitos-chave, como encapsulamento, abstração, modularidade e separação de preocupações. Isso ajuda a escrever código mais limpo, coeso e escalável.
+2. Boas práticas de programação: Design Patterns encapsulam práticas recomendadas e princípios de design de software. Ao aprender e aplicar esses padrões, você adquire uma compreensão mais profunda de conceitos-chave, como encapsulamento, abstração, modularidade e separação de preocupações. Isso ajuda a escrever código mais limpo, coeso e escalável.
 
-- 3 - Comunicação e colaboração: Design Patterns fornecem uma linguagem comum para descrever e comunicar soluções de design. Ao utilizar esses padrões, você pode se comunicar de forma mais eficiente com outros desenvolvedores, facilitando a colaboração em projetos em equipe. Os Design Patterns são amplamente conhecidos e reconhecidos na indústria, tornando mais fácil compartilhar conhecimento e ideias com outros profissionais.
+3. Comunicação e colaboração: Design Patterns fornecem uma linguagem comum para descrever e comunicar soluções de design. Ao utilizar esses padrões, você pode se comunicar de forma mais eficiente com outros desenvolvedores, facilitando a colaboração em projetos em equipe. Os Design Patterns são amplamente conhecidos e reconhecidos na indústria, tornando mais fácil compartilhar conhecimento e ideias com outros profissionais.
 
-- 4 - Flexibilidade e extensibilidade: Design Patterns promovem o design flexível e extensível de sistemas. Eles ajudam a separar componentes e responsabilidades, permitindo que você faça alterações em partes específicas do código sem afetar o restante do sistema. Isso torna o código mais adaptável a mudanças futuras, seja para adicionar novos recursos, modificar comportamentos ou corrigir problemas.
+4. Flexibilidade e extensibilidade: Design Patterns promovem o design flexível e extensível de sistemas. Eles ajudam a separar componentes e responsabilidades, permitindo que você faça alterações em partes específicas do código sem afetar o restante do sistema. Isso torna o código mais adaptável a mudanças futuras, seja para adicionar novos recursos, modificar comportamentos ou corrigir problemas.
 
-- 5 - Desenvolvimento de habilidades de resolução de problemas: Ao estudar Design Patterns, você aprende a identificar problemas comuns no desenvolvimento de software e a aplicar soluções adequadas. Isso desenvolve suas habilidades de resolução de problemas e amplia sua capacidade de projetar soluções robustas e eficientes. A capacidade de reconhecer padrões e aplicar soluções existentes a novos problemas é uma habilidade valiosa em qualquer área do desenvolvimento de software.
+5. Desenvolvimento de habilidades de resolução de problemas: Ao estudar Design Patterns, você aprende a identificar problemas comuns no desenvolvimento de software e a aplicar soluções adequadas. Isso desenvolve suas habilidades de resolução de problemas e amplia sua capacidade de projetar soluções robustas e eficientes. A capacidade de reconhecer padrões e aplicar soluções existentes a novos problemas é uma habilidade valiosa em qualquer área do desenvolvimento de software.
 
 ---
 
@@ -50,6 +50,31 @@ O Design Pattern Strategy é valioso quando há algoritmos que podem variar e pr
 
 ## Chain of Responsibility
 
+O padrão de projeto Chain of Responsibility é um dos padrões comportamentais do design pattern. Ele permite que uma solicitação seja passada por uma cadeia de objetos responsáveis pelo processamento, de modo que cada objeto na cadeia possa decidir se processa a solicitação ou a passa para o próximo objeto na cadeia.
+
+Nesse padrão, cada objeto na cadeia possui uma referência para o próximo objeto na cadeia. Quando uma solicitação é feita, ela percorre a cadeia até encontrar um objeto capaz de lidar com a solicitação.
+
+### Uso do Padrão Chain of Responsibility
+
+O padrão Chain of Responsibility é adequado para situações em que há vários objetos que podem lidar com uma solicitação e a decisão sobre qual objeto deve processar a solicitação deve ser tomada em tempo de execução.
+
+Esse padrão é comumente usado em casos como:
+
+- Tratamento de eventos em interfaces gráficas de usuário, onde vários componentes podem estar interessados em manipular um evento específico.
+
+- Processamento de solicitações em um sistema de software, onde diferentes processadores podem ser responsáveis por diferentes tipos de solicitações.
+
+### Benefícios do Padrão Chain of Responsibility
+
+O padrão Chain of Responsibility oferece os seguintes benefícios:
+
+1. Desacoplamento: O padrão ajuda a desacoplar o remetente de uma solicitação dos destinatários, permitindo que vários objetos possam lidar com a solicitação de forma independente.
+
+2. Flexibilidade e extensibilidade: A cadeia de objetos pode ser configurada dinamicamente e novos objetos podem ser facilmente adicionados ou removidos da cadeia sem afetar o remetente.
+
+3. Reutilização: Os objetos responsáveis pelo processamento da solicitação podem ser reutilizados em diferentes cadeias ou contextos.
+
+4. Suporte a lógica condicional: O padrão permite a implementação de lógica condicional flexível e dinâmica para determinar qual objeto deve processar uma solicitação.
 
 [Saiba mais](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
@@ -129,5 +154,30 @@ A separação entre o Command e o Command Handler traz benefícios, como:
 
 ---
 
-## 
+## Observer
 
+O padrão de projeto Observer é um dos padrões comportamentais do design pattern. Ele define uma relação de um-para-muitos entre objetos, onde a modificação de um objeto notifica e atualiza automaticamente todos os outros objetos dependentes.
+
+Nesse padrão, existe um objeto chamado "subject" (sujeito) que mantém uma lista de seus "observers" (observadores). Quando ocorre uma mudança no estado do "subject", todos os "observers" registrados são notificados e atualizados de acordo.
+
+### Uso do Padrão Observer
+
+O padrão Observer é útil em situações onde existem objetos que precisam saber quando o estado de outro objeto muda, sem que haja um acoplamento direto entre eles. Além disso, ele proporciona uma forma flexível de adicionar e remover observadores conforme necessário.
+
+Este padrão é amplamente utilizado em aplicações onde ocorre a necessidade de notificar automaticamente partes interessadas sobre alterações de estado, como por exemplo:
+
+- Atualizações em interfaces gráficas de usuário (GUIs), onde componentes de interface gráfica precisam reagir a eventos gerados por outros componentes.
+- Publicação e assinatura de eventos, onde uma entidade publica eventos e outras entidades se inscrevem para receber esses eventos.
+
+### Benefícios do Padrão Observer
+
+O padrão Observer traz os seguintes benefícios:
+
+1. Desacoplamento: Os objetos observadores não possuem conhecimento direto sobre o objeto observado, reduzindo o acoplamento entre eles.
+2. Extensibilidade: É possível adicionar e remover observadores sem modificar o objeto observado.
+3. Reutilização: Observadores podem ser reutilizados em diferentes contextos, facilitando a modularidade do código.
+4. Comunicação assíncrona: Observadores são notificados de forma assíncrona, permitindo que continuem suas operações sem bloquear o objeto observado.
+
+[Saiba mais](https://refactoring.guru/design-patterns/observer)
+
+---
