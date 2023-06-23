@@ -1,6 +1,16 @@
 # Projeto de estudos sobre Design Patterns
 
-O projeto se baseia na criação de uma loja fictícia no qual são elaborados calculadoras de impostos e de descontos, utilizando Design Patterns. *O projeto é voltado exclusivamente de cunho educativo dentro de um cenário fictício.* 
+O projeto se baseia na criação de uma loja fictícia que possui pedidos, descontos e impostos, utilizando Design Patterns na construção do funcionamento do código. No projeto acabamos utilizando alguns padrões chamados de Behavioral Patterns, que tratam da comunicação entre os objetos, especialmente em termos de responsabilidade e algoritmo. 
+
+Foram utilizados os seguintes padrões de projetos:
+- [x] Strategy
+- [x] Chain of Responsibility
+- [x] Template Method
+- [x] State
+- [x] Command
+- [x] Observer
+
+*Obs.: O projeto foi desenvolvido apenas para o estudo dos padrões de projetos, faltando implementar algumas funcionalidades como o envio de email após a execução de um pedido e o registro do pedido em um banco de dados. No projeto esses processos são representados por mensagens na CLI.*
 
 ## 5 vantagens de aprender Design Patterns:
 
